@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Terrific Lights</title>
+	<style type="text/css">
+	body{
+		background-color: skyBlue;
+		font-family: Charlemagne Std;
+	}
+	.container{
+		
+		/*margin-right: 40%;*/
+		margin-left: 40%;
+		margin-right: 40%;
+		height: 80%;
+		border-radius: 10%; 
+		/*width: 20%;*/
+		display: flex;
+		flex-direction: column;
+		background-color: cadetBlue;
+	}
+	.circle{
+		border-radius: 50%;
+		height: 100px;
+		width: 100px;
+		background-color: white;
+		margin-left: 31.5%;
+		margin-right: 31.5%;
+		margin-top: 10%;
+		margin-bottom: 10%;
+	}
+	</style>
+	<script type="text/javascript">
+	function red(){
+	 document.getElementById("c2").style.backgroundColor="white";
+	 document.getElementById("c3").style.backgroundColor="white";
+	 document.getElementById("c1").style.backgroundColor="red";
+	 setTimeout('yellow()',2000);
+	}
+	function yellow(){
+	 document.getElementById("c1").style.backgroundColor="white";
+	 document.getElementById("c3").style.backgroundColor="white";
+	 document.getElementById("c2").style.backgroundColor="yellow";
+	 setTimeout('green()',2000);
+	}
+	function green(){
+	 document.getElementById("c2").style.backgroundColor="white";
+	 document.getElementById("c1").style.backgroundColor="white";
+	 document.getElementById("c3").style.backgroundColor="green";
+	 setTimeout('yellow1()',2000);
+	}
+	function yellow1(){
+	 document.getElementById("c1").style.backgroundColor="white";
+	 document.getElementById("c3").style.backgroundColor="white";
+	 document.getElementById("c2").style.backgroundColor="yellow";
+	 setTimeout('red()',2000);
+	}		
+	</script>
+
+</head>
+<body onload="red();">
+<h1 style="text-align: center;">Traffic Lights</h1>
+<div class="container">
+ 	<div id="c1" class="circle"></div>
+	<div id="c2" class="circle"></div>
+	<div id="c3" class="circle"></div> 
+</div>
+</body>
+</html>
+
+
+
